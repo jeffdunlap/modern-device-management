@@ -6,8 +6,12 @@ A collection of scripts for modern device management tasks across macOS and Wind
 
 ```
 modern-device-management/
-├── macOS/              # Scripts for macOS device management
-├── Windows/            # Scripts for Windows device management (PowerShell Core)
+├── macOS/                          # Scripts for macOS device management
+│   ├── unbind-from-ad-README.md
+│   └── unbind-from-ad.sh
+├── Windows/                        # Scripts for Windows device management (PowerShell Core)
+│   ├── Convert-HubridToEntraManaged-README.md
+│   └── Convert-HybridToEntraManaged.ps1
 └── README.md
 ```
 
@@ -21,7 +25,9 @@ modern-device-management/
 
 ### macOS
 
-*No scripts yet.*
+| Script | Description |
+|--------|-------------|
+| [unbind-from-ad.sh](macOS/unbind-from-ad.sh) | Unbinds a macOS device from Active Directory and cleans up all AD-related configuration, cached credentials, Kerberos tickets, and directory service artifacts. Designed for Jamf-managed environments. |
 
 ## Requirements
 
